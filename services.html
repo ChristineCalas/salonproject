@@ -1,29 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Lavender Salon</title>
-    </head>
-
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lavender Salon</title>
+</head>
 <body>
+    <header>
 
+    </header>
 
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" height="100" width="100" /></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nucampNavbar">
+                <ul class="topBotomBordersOut navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link d-block d-sm-none">Book Appointment</a></li>
+                </ul>
+            </div>
+            <a href="#" role="button" class="btn btn-secondary text-nowrap d-none d-sm-block" data-toggle="tooltip" data-placement="bottom" data-html="true" title="Or call us at <br /><strong>1-206-555-1234</strong>">Book Appointment</a>
+            <a href="#" role="button" class="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom">Book Appointment</a>
+        </div>
+    </nav> 
+    <!-- navbar end -->
 
-
-
-
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <!-- Accordion -->
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <!-- Haircuts and Others -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="first" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Haircuts and Others
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <p>Lorem , iaculis ex. Nulla vitae ipsum diam. Pellentesque vitae metus vitae 
+                                    massa egestas posuere. Mauris ultricies vehicula tempor. Pellentesque justo 
+                                    turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros 
+                                    consectetur rhoncus sed eget lectus. Praesent non erat vehic
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Treatments -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Treatments
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <div class="panel-body">
+                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
+                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
+                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Color -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed last" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Color
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                            <div class="panel-body">
+                                <p>Nulla vitae ipsum diam. Pellentesque vitae metus vitae massa egestas posuere 
+                                    justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo 
+                                    eros consectetur rhoncus sed eget lectus. Praesent non erat vehicula, posuere 
+                                    massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere 
+                                    ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Brazilian Blowout -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    Brazilian Blowout
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                            <div class="panel-body">
+                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
+                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
+                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extensions -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Extensions
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
+                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
+                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Waxing -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Waxing
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
+                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
+                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Thermal -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSeven">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                    Thermal
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                            <div class="panel-body">
+                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
+                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
+                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Accordion-->
+            </div>
+        </div>
+    </div>
 
     <!-- Footer with social and contact links -->
     <footer>
@@ -32,10 +189,10 @@
                 <div class="col-4 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#contact.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-6 col-sm-5">
@@ -58,5 +215,4 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>
