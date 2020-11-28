@@ -78,23 +78,33 @@ footer {
 
 /* parallax */
 .parallax1 {
-    background-image: url("images/salon1.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 800px;
-    width: auto;
+  background-image: url("images/salon1.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
 }
   
-  .parallax2 {
-    background-image: url("images/salon2.jpg");
-    height: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
+.parallax2 {
+  background-image: url("images/salon2.jpg");
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+}
+
+.parallax3 {
+  background-image: url("images/salon3.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
 }
 /* end parallax */
 

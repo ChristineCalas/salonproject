@@ -31,20 +31,128 @@
             <div class="collapse navbar-collapse" id="nucampNavbar">
                 <ul class="topBotomBordersOut navbar-nav ml-auto">
                     <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link d-block d-sm-none">Book Appointment</a></li>
+                    <li class="nav-item"><a class="nav-link d-block d-sm-none" data-toggle="modal" data-target="#bookAppt">Book Appointment</a></li>
                 </ul>
             </div>
-            <a href="#" role="button" class="btn btn-secondary text-nowrap d-none d-sm-block">Book Appointment</a>
-            <a href="#" role="button" class="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom">Book Appointment</a>
+            <a href="#" role="button" class="btn btn-secondary text-nowrap d-none d-sm-block" data-toggle="modal" data-target="#bookAppt">Book Appointment</a>
+            <a href="#" role="button" class="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" data-toggle="modal" data-target="#bookAppt">Book Appointment</a>
         </div>
     </nav> 
     <!-- navbar end -->
 
+    <!-- modal -->
+    <div class="modal fade book-modal" data-backdrop="static" id="bookAppt">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <!-- modal body -->
+                <div class="modal-body book-modal-body">
+                    <h5 class="modal-title text-center">BOOK APPOINTMENT</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                    </button>
+                    <form class="book-modal-form">
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="firstName" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="firstName">First Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="lastName" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="lastName">Last Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailAddress" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="emailAddress">Email address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="phoneNumber" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="select-form-control-placeholder" for="service"></label>
+                            <select class="form-control" id="service" name="service" required>
+                                <option selected disable value>Pick a service...</option>
+                                <option>Women's haircut</option>
+                                <option>Men's haircut</option>
+                                <option>Beard trim</option>
+                                <option>Child's cut 12 and under</option>
+                                <option>Shampoo only</option>
+                                <option>Deep conditioning treatment</option>
+                                <option>Treatment with blowout</option>
+                                <option>Base color only</option>
+                                <option>Base color and haircut</option>
+                                <option>All over color and haircut</option>
+                                <option>Gloss only</option>
+                                <option>Foil highlights, gloss, and haircut</option>
+                                <option>Color, foil highlight, and haircut</option>
+                                <option>Balayage, gloss, and haircut</option>
+                                <option>Balayage/ombré/color melting</option>
+                                <option>Artistic vivid coloring</option>
+                                <option>Brazilian blowout smoothing treatment</option>
+                                <option>Brazilian blowout *long hair</option>
+                                <option>Extension installation</option>
+                                <option>Extension adjustment</option>
+                                <option>Extension removal</option>
+                                <option>Simple blowout</option>
+                                <option>Blowout and curled</option>
+                                <option>Brow wax</option>
+                                <option>Lip wax</option>
+                                <option>Chin wax</option>
+                                <option>Brow and lip wax</option>
+                                <option>Lip and chin wax</option>
+                                <option>Sideburns</option>
+                                <option>Ears</option>
+                                <option>Full face wax</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="pickDate" autocomplete="off" required data-date-end-date="4d">
+                            <label class="form-control-placeholder" for="pickDate"></label>
+                        </div>
+                        <div class="form-group">
+                            <label class="select-form-control-placeholder" for="time"></label>
+                            <select class="form-control" id="time" name="time" required>
+                                <option selected disable value>Pick a time...</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>3:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group forgot-pass-fau text-center ">
+                            <a href="#" class="text-secondary">
+                                By Clicking "Book Appointment" you accept our<br>
+                                <span class="text-primary-fau">Terms and Conditions</span>
+                            </a>
+                        </div>
+                        <div class="btn-check-log">
+                            <button type="submit" class="btn-check-login">Book Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- parallax image -->
+    <div class="parallax1">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col text-center text-white">
+                    <h1><b>SERVICES</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- parallax end -->
+
     <div class="container">
-        <div class="row">
-            <div class="col">
+        <div class="row row-content">
+            <div class="col-sm-10 offset-sm-1">
                 <!-- Accordion -->
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <!-- Haircuts and Others -->
@@ -58,11 +166,30 @@
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body">
-                                <p>Lorem , iaculis ex. Nulla vitae ipsum diam. Pellentesque vitae metus vitae 
-                                    massa egestas posuere. Mauris ultricies vehicula tempor. Pellentesque justo 
-                                    turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo eros 
-                                    consectetur rhoncus sed eget lectus. Praesent non erat vehic
-                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td> Women's haircut</td>
+                                            <td class="">$65</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Men's haircut</td>
+                                            <td>$30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Beard trim</td>
+                                            <td>$5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Child's cut 12 and under</td>
+                                            <td>$23</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shampoo only</td>
+                                            <td>$5</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -77,10 +204,18 @@
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
                             <div class="panel-body">
-                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
-                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
-                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
-                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td>Deep conditioning treatment</td>
+                                            <td>$30</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Treatment with blowout</td>
+                                            <td>$65</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -95,12 +230,46 @@
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                             <div class="panel-body">
-                                <p>Nulla vitae ipsum diam. Pellentesque vitae metus vitae massa egestas posuere 
-                                    justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis commodo 
-                                    eros consectetur rhoncus sed eget lectus. Praesent non erat vehicula, posuere 
-                                    massa id, ultricies est. Pellentesque sit amet venenatis est, quis posuere 
-                                    ipsum.
-                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td>Base color only</td>
+                                            <td>$80</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Base color and haircut</td>
+                                            <td>$130</td>
+                                        </tr>
+                                        <tr>
+                                            <td>All over color and haircut</td>
+                                            <td>$160</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Gloss only</td>
+                                            <td>$60</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Foil highlights, gloss, and haircut</td>
+                                            <td>$200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color, foil highlights, and haircut</td>
+                                            <td>$200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Balayage, gloss, and haircut</td>
+                                            <td>$200</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Balayage/ombré/color melting</td>
+                                            <td>$240</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Artistic vivid coloring</td>
+                                            <td>$280</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -115,64 +284,124 @@
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                             <div class="panel-body">
-                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
-                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
-                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Extensions -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingFive">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    Extensions
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
-                            <div class="panel-body">
-                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
-                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
-                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Waxing -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingSix">
-                            <h4 class="panel-title">
-                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    Waxing
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
-                            <div class="panel-body">
-                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
-                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
-                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
-                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td>Brazilian blowout treatment</td>
+                                            <td>$250</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brazilian blowout *long hair</td>
+                                            <td>$300</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- Thermal -->
                     <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    Thermal
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td>Simple blowout</td>
+                                            <td>$45</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Blowout and curled</td>
+                                            <td>$55</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Extensions -->
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingSix">
+                            <h4 class="panel-title">
+                                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                    Extensions
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td>Extension installation</td>
+                                            <td>$225</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Extension adjustment</td>
+                                            <td>$140</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Extension removal</td>
+                                            <td>$45</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Waxing -->
+                    <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingSeven">
                             <h4 class="panel-title">
                                 <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-                                    Thermal
+                                    Waxing
                                 </a>
                             </h4>
                         </div>
                         <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
                             <div class="panel-body">
-                                <p>Pellentesque justo turpis, blandit nec ex eu, tempus placerat diam. Morbi a felis 
-                                    commodo eros consectetur rhoncus sed eget lectus, posuere massa id, ultricies est. 
-                                    Pellentesque sit amet venenatis est, quis posuere ipsum.
-                                </p>
+                                <div class="table-responsive">
+                                    <table class="table table-borderless table-hover">
+                                        <tr>
+                                            <td>Brow</td>
+                                            <td>$15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lip</td>
+                                            <td>$15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chin</td>
+                                            <td>$15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Brow and lip</td>
+                                            <td>$25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Lip and chin</td>
+                                            <td>$25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Sideburns</td>
+                                            <td>$25</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Ears</td>
+                                            <td>$15</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Full face</td>
+                                            <td>$45</td>
+                                        </tr>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                     </div>
