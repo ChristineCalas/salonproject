@@ -16,17 +16,6 @@ header h1, header h2, header h3 {
     text-shadow: 0 0 10px #000;
 }
 
-footer {
-    padding: 20px 0;
-}
-
-.jumbotron {
-    padding: 30px;
-    background-image: linear-gradient(to right, #5637DD, #3046C5, #60106B);
-    color: white;
-    margin: 0;
-}
-
 .row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
@@ -48,6 +37,94 @@ footer {
 .carousel-caption {
     background-color: rgba(0, 0, 0, 0.5);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+section {
+    padding: 50px 0;
+}
+
+#footer {
+    background: #835496 !important;
+}
+#footer h5{
+	padding-left: 10px;
+  border-left: 3px solid #eeeeee;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+#footer ul.social li{
+	padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+	font-size:25px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+	font-size:30px;
+	margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+	color:#ffffff;
+}
+#footer ul.social li a:hover{
+	color:#eeeeee;
+}
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+}
+@media (max-width:767px){
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+  }
+}
+/* end footer */
+
+
+
+
+
+
+
+
 
 
 
@@ -154,7 +231,7 @@ footer {
   position: relative;
   top: -45px;
   left: 10px;
- color:  rgb(65, 2, 90);
+ color: rgb(65, 2, 90);
  }
  .book-modal-body .close{
     opacity:0.75;
@@ -508,7 +585,63 @@ footer {
 
 
 
-/* Accordion Toggle */
+
+
+/* newsletter */
+.newsletter .newsletter-form {
+  position: relative;
+  max-width: 355px;
+  margin-top: 23px;
+  z-index: 999;
+}
+
+.newsletter .newsletter-form input {
+  height: 55px;
+  width: 100%;
+  padding: 18px 135px 17px 30px;
+  font-family: IM Fell English,Times,Georgia,serif;
+  font-weight: 400;
+  font-style: italic;
+  border: 0 none;
+  border-radius: 20px;
+  outline: none;
+  background-color: #fff;
+  color: rgb(65, 2, 90);
+  font-size: 1.125rem;
+  line-height: 1;
+}
+
+.newsletter .newsletter-form button {
+  font-family: Sofia Pro,Helvetica,Arial,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  width: 116px;
+  height: 35px;
+  transition: background-color .3s cubic-bezier(.165,.84,.44,1);
+  border-radius: 15px;
+  background-color: rgb(82, 43, 97);
+  color: #fff;
+  font-size: .875rem;
+  line-height: 1;
+  position: absolute;
+  right: 9px;
+  bottom: 9px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  outline: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* end newsletter */
+
+
+
+
+
+
+/* accordion toggle */
 .panel-group .panel{
   background-color: #fff;
   border:none;
@@ -567,7 +700,7 @@ footer {
   font-size:14px;
   position: relative;
 }
-/* End Accordion Toggle */
+/* end accordion toggle */
 
 
 

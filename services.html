@@ -17,10 +17,6 @@
     <title>Lavender Salon</title>
 </head>
 <body>
-    <header>
-
-    </header>
-
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container-fluid">
@@ -40,7 +36,7 @@
             <a href="#" role="button" class="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" data-toggle="modal" data-target="#bookAppt">Book Appointment</a>
         </div>
     </nav> 
-    <!-- navbar end -->
+    <!-- end navbar -->
 
     <!-- modal -->
     <div class="modal fade book-modal" data-backdrop="static" id="bookAppt">
@@ -148,14 +144,14 @@
             </div>
         </div>
     </div>
-    <!-- parallax end -->
+    <!-- end parallax -->
 
     <div class="container">
         <div class="row row-content">
             <div class="col-sm-10 offset-sm-1">
-                <!-- Accordion -->
+                <!-- accordion -->
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-                    <!-- Haircuts and Others -->
+                    <!-- haircuts and others -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingOne">
                             <h4 class="panel-title">
@@ -193,7 +189,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Treatments -->
+                    <!-- treatments -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingTwo">
                             <h4 class="panel-title">
@@ -219,7 +215,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Color -->
+                    <!-- color -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingThree">
                             <h4 class="panel-title">
@@ -273,7 +269,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Brazilian Blowout -->
+                    <!-- Brazilian blowout -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingFour">
                             <h4 class="panel-title">
@@ -299,7 +295,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Thermal -->
+                    <!-- thermal -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingFive">
                             <h4 class="panel-title">
@@ -325,7 +321,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Extensions -->
+                    <!-- extensions -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingSix">
                             <h4 class="panel-title">
@@ -355,7 +351,7 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Waxing -->
+                    <!-- waxing -->
                     <div class="panel panel-default">
                         <div class="panel-heading" role="tab" id="headingSeven">
                             <h4 class="panel-title">
@@ -406,37 +402,64 @@
                         </div>
                     </div>
                 </div>
-                <!-- End Accordion-->
+                <!-- end accordion-->
             </div>
         </div>
     </div>
 
-    <!-- Footer with social and contact links -->
-    <footer>
-        <div class="container">
-            <div class="row">             
-                <div class="col-4 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#contact.html">Contact</a></li>
-                    </ul>
+    <!-- footer -->
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-sm-6 col-md-3">
+					<h5>Links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Services</a></li>
+						<li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5>Contact</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#" title="call me"><i class="fa fa-phone"></i>555-867-5309</a></li>
+						<li><a href="#" title="email me"><i class="fa fa-envelope"></i>stylist@stylist.com</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 pl-5">
+                    <h5>Newsletter</h5>
+                    <div class="newsletter js-rollover" data-radius="50">
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="emailAddress"></label>
+                            <button type="submit" class="button">Subscribe</button>              
+                        </form>
+                    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>All Rights Reserved</p>
                 </div>
-                <div class="col-6 col-sm-5">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+15555555555"><i class="fa fa-phone"></i> 1-555-555-5555</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:hairstylist@lavendersalon.com"><i class="fa fa-envelope-o"></i> hairstylist@lavendersalon.com</a>
-                </div>              
-           </div>
-        </div>
-    </footer>
+				<hr>
+			</div>	
+		</div>
+    </section>
+    <!-- end footer-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>

@@ -17,10 +17,6 @@
     <title>Lavender Salon</title>
 </head>
 <body>
-    <header>
-
-    </header>
-
     <!-- navbar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
         <div class="container-fluid">
@@ -40,7 +36,7 @@
             <a href="#" role="button" class="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" data-toggle="modal" data-target="#bookAppt">Book Appointment</a>
         </div>
     </nav> 
-    <!-- navbar end -->
+    <!-- end navbar -->
   
     <!-- modal -->
     <div class="modal fade book-modal" data-backdrop="static" id="bookAppt">
@@ -138,7 +134,7 @@
     </div>
     <!-- end modal -->
 
-    <!-- carousel with book appt button -->
+    <!-- carousel -->
     <div id="salonCarousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#salonCarousel" data-slide-to="0" class="active"></li>
@@ -199,7 +195,7 @@
             </a>
         </div>
     </div>
-    <!-- carousel end -->
+    <!-- end carousel -->
 
     <!-- salon description -->
     <div class="container my-5">
@@ -207,16 +203,15 @@
             <div class="col-sm-8 text-center text-wrap">
                 <h3>Welcome, Lavender Tribe!</h3>
                 <p>Lavender Salon studio has been established since 2016 and is
-                privately nestled inside the Oaks Salon Studios in beautiful
-                West Ashley where your elite stylist, Tami Bradley, will pamper
-                you from start to finish!</p>
+                privately nestled inside the Oaks Salon Studios where your elite stylist, 
+                Tami, will pamper you from start to finish!</p>
             </div>
             <div class="col-sm-4 text-center">
                 <h4><img src="images/tami.jpg" height="300" width="200" class="img-fluid rounded-circle"></h4>
             </div>
         </div>
     </div>
-    <!-- description end-->
+    <!-- end description -->
 
     <!-- 3 column picture cards -->
     <div class="container my-5">
@@ -253,11 +248,11 @@
             </div>
         </div>
     </div>
-    <!-- 3 column picture cards end -->
+    <!-- end 3 cards -->
 
     <!-- parallax image -->
     <div class="parallax2"></div>
-    <!-- parallax end -->
+    <!-- end parallax -->
 
     <!-- hours and map -->
     <div class="container my-5">
@@ -279,7 +274,7 @@
             </div>
         </div>
     </div>
-    <!-- hours and map end -->
+    <!-- end hours and map -->
 
     <!-- picture gallery -->
     <div class="container text-center my-3">
@@ -308,34 +303,61 @@
             </a>
         </div>
     </div>
-    <!-- gallery end -->
+    <!-- end picture gallery -->
 
     <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="row">             
-                <div class="col-6 col-md-4 text-center">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-sm-6 col-md-3">
+					<h5>Links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="services.html"><i class="fa fa-angle-double-right"></i>Services</a></li>
+						<li><a href="contact.html"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5>Contact</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="#" title="call me"><i class="fa fa-phone"></i>555-867-5309</a></li>
+						<li><a href="#" title="email me"><i class="fa fa-envelope"></i>stylist@stylist.com</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 pl-5">
+                    <h5>Newsletter</h5>
+                    <div class="newsletter js-rollover" data-radius="50">
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="emailAddress"></label>
+                            <button type="submit" class="button">Subscribe</button>              
+                        </form>
+                    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>	
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+					<p>All Rights Reserved</p>
                 </div>
-                <div class="col-6 col-md-4 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="col-md-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+15555555555"><i class="fa fa-phone"></i> 1-555-555-5555</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:hairstylist@lavendersalon.com"><i class="fa fa-envelope-o"></i> hairstylist@lavendersalon.com</a>
-                </div>              
-           </div>
-        </div>
-    </footer>
+				<hr>
+			</div>	
+		</div>
+    </section>
+    <!-- end footer-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -348,6 +370,7 @@
         interval: 3000,
         })
     </script>
+    <!-- end carousel script -->
 
     <!-- hours of operation get day -->
     <script>
@@ -355,6 +378,7 @@
         $('.opening-hours li').eq(new Date().getDay()).addClass('today');
         });
     </script>
+    <!-- end get day script -->
 
 </body>
 </html>
