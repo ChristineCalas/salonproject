@@ -1,62 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <!-- Required meta tags always come first -->
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
     
-        <!-- Additional CSS must be placed after Bootstrap CSS -->
-        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" />
-        <link rel="stylesheet" href="styles.css" />
-        <title>Lavender Salon</title>
-    </head>
-
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Lavender Salon</title>
+</head>
 <body>
-
-
-
-
-
-contact form
-
-
-
-
-
-
-
-    <!-- Footer with social and contact links -->
-    <footer>
-        <div class="container">
-            <div class="row">             
-                <div class="col-4 col-sm-2">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+15555555555"><i class="fa fa-phone"></i> 1-555-555-5555</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:hairstylist@lavendersalon.com"><i class="fa fa-envelope-o"></i> hairstylist@lavendersalon.com</a>
-                </div>              
-           </div>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" height="100" width="100" /></a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#salonNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="salonNavbar">
+                <ul class="topBotomBordersOut navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link d-block d-sm-none" data-toggle="modal" data-target="#bookAppt">Book Appointment</a></li>
+                </ul>
+            </div>
+            <a href="#" role="button" class="btn btn-secondary text-nowrap d-none d-sm-block" data-toggle="modal" data-target="#bookAppt">Book Appointment</a>
+            <a href="#" role="button" class="btn btn-lg btn-secondary text-nowrap d-block d-sm-none fixed-bottom" data-toggle="modal" data-target="#bookAppt">Book Appointment</a>
         </div>
-    </footer>
+    </nav> 
+    <!-- end navbar -->
+  
+    <!-- modal -->
+    <div class="modal fade book-modal" data-backdrop="static" id="bookAppt">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+            <!-- modal body -->
+                <div class="modal-body book-modal-body">
+                    <h5 class="modal-title text-center">BOOK APPOINTMENT</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+                    </button>
+                    <form class="book-modal-form">
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="firstName" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="firstName">First Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="name" class="form-control" id="lastName" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="lastName">Last Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="emailAddress" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="emailAddress">Email address</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-control" id="phoneNumber" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="form-group">
+                            <label class="select-form-control-placeholder" for="service"></label>
+                            <select class="form-control" id="service" name="service" required>
+                                <option selected disable value>Pick a service...</option>
+                                <option>Women's haircut</option>
+                                <option>Men's haircut</option>
+                                <option>Beard trim</option>
+                                <option>Child's cut 12 and under</option>
+                                <option>Shampoo only</option>
+                                <option>Deep conditioning treatment</option>
+                                <option>Treatment with blowout</option>
+                                <option>Base color only</option>
+                                <option>Base color and haircut</option>
+                                <option>All over color and haircut</option>
+                                <option>Gloss only</option>
+                                <option>Foil highlights, gloss, and haircut</option>
+                                <option>Color, foil highlight, and haircut</option>
+                                <option>Balayage, gloss, and haircut</option>
+                                <option>Balayage/ombré/color melting</option>
+                                <option>Artistic vivid coloring</option>
+                                <option>Brazilian blowout smoothing treatment</option>
+                                <option>Brazilian blowout *long hair</option>
+                                <option>Extension installation</option>
+                                <option>Extension adjustment</option>
+                                <option>Extension removal</option>
+                                <option>Simple blowout</option>
+                                <option>Blowout and curled</option>
+                                <option>Brow wax</option>
+                                <option>Lip wax</option>
+                                <option>Chin wax</option>
+                                <option>Brow and lip wax</option>
+                                <option>Lip and chin wax</option>
+                                <option>Sideburns</option>
+                                <option>Ears</option>
+                                <option>Full face wax</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <input type="date" class="form-control" id="pickDate" autocomplete="off" required data-date-end-date="4d">
+                            <label class="form-control-placeholder" for="pickDate"></label>
+                        </div>
+                        <div class="form-group">
+                            <label class="select-form-control-placeholder" for="time"></label>
+                            <select class="form-control" id="time" name="time" required>
+                                <option selected disable value>Pick a time...</option>
+                                <option>10:00 AM</option>
+                                <option>11:00 AM</option>
+                                <option>12:00 PM</option>
+                                <option>1:00 PM</option>
+                                <option>2:00 PM</option>
+                                <option>3:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="form-group forgot-pass-fau text-center ">
+                            <a href="#" class="text-secondary">
+                                By Clicking "Book Appointment" you accept our<br>
+                                <span class="text-primary-fau">Terms and Conditions</span>
+                            </a>
+                        </div>
+                        <div class="btn-check-log">
+                            <button type="submit" class="btn-check-login">Book Appointment</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal -->
+
+    <!-- parallax image -->
+    <div class="parallaxBlowdry">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col text-center text-dark">
+                    <br /><h1><b>CONTACT LAVENDER SALON</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end parallax -->
+
+    <!-- contact form-->
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-7 offset-2">
+                <form class="book-modal-form">
+                    <div class="form-group row">
+                        <input type="name" class="form-control" id="fullName" autocomplete="off" required>
+                        <label class="form-control-placeholder" for="fullName">Full Name</label>
+                    </div>
+                    <div class="form-group row">
+                        <input type="email" class="form-control" id="contactEmail" autocomoplete="off" required>
+                        <label class="form-control-placeholder" for="contactEmail">Email</label>
+                    </div>
+                    <div class="form-group row">
+                        <input type="tel" class="form-control" id="contactNum" autocomplete="off" required>
+                        <label class="form-control-placeholder" for="contactNum">Phone Number</label>
+                    </div>
+                    <div class="form-group row">
+                        <textarea class="form-control" name="message" id="message" rows="5" placeholder="Your message..."></textarea>
+                        <label class="form-control-placeholder" for="message"></label>
+                    </div>
+                    <div class="form-group row">
+                        <button type="submit" class="contactBtn">Submit your message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- end contact form -->
+
+    <!-- footer -->
+    <section id="footer">
+		<div class="container">
+			<div class="row text-center text-xs-center text-sm-left text-md-left">
+				<div class="col-sm-6 col-md-3">
+					<h5>Links</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="index.html"><i class="fa fa-angle-double-right"></i>Home</a></li>
+						<li><a href="about.html"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="services.html"><i class="fa fa-angle-double-right"></i>Services</a></li>
+						<li><a href="#"><i class="fa fa-angle-double-right"></i>Contact</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h5>Contact</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="tel:+15555555555" title="call me"><i class="fa fa-phone"></i>555-867-5309</a></li>
+						<li><a href="mailto:email@email.com" title="email me"><i class="fa fa-envelope"></i>stylist@stylist.com</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-6 pl-5">
+                    <h5>Newsletter</h5>
+                    <div class="newsletter js-rollover" data-radius="50">
+                        <form class="newsletter-form">
+                            <input type="email" class="form-control" id="emailAddress" placeholder="Enter your email" autocomplete="off" required>
+                            <label class="form-control-placeholder" for="emailAddress"></label>
+                            <button type="submit" class="button">Subscribe</button>              
+                        </form>
+                    </div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+					<ul class="list-unstyled list-inline social text-center">
+						<li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-youtube"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				<hr>
+			</div>
+		</div>
+    </section>
+    <!-- end footer-->
 
     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -64,5 +230,4 @@ contact form
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 </body>
-
 </html>

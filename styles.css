@@ -154,8 +154,8 @@ section {
 
 
 /* parallax */
-.parallax1 {
-  background-image: url("images/salon1.jpg");
+.parallaxSign {
+  background-image: url("images/lavendersalonsign.png");
   height: 650px;
   background-attachment: fixed;
   background-position: center;
@@ -163,10 +163,10 @@ section {
   background-size: cover;
   width: auto;
 }
-  
-.parallax2 {
-  background-image: url("images/salon2.jpg");
-  height: 400px;
+
+.parallaxTools {
+  background-image: url("images/tools.jpg");
+  height: 650px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -174,8 +174,18 @@ section {
   width: auto;
 }
 
-.parallax3 {
-  background-image: url("images/salon3.jpg");
+.parallaxBlowdry {
+  background-image: url("images/blowdry.jpg");
+  height: 650px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+}
+
+.parallaxShears {
+  background-image: url("images/shears.jpg");
   height: 650px;
   background-attachment: fixed;
   background-position: center;
@@ -634,8 +644,42 @@ section {
   text-decoration: none;
   cursor: pointer;
 }
+
+.newsletter-form button:hover {
+  background: rgb(131, 84, 150);
+  color: #ffffff;
+  box-shadow: 0 10px 25px -2px rgb(65, 2, 90);
+}
 /* end newsletter */
 
+
+
+
+
+/* contact button */
+.contactBtn {
+  background: rgb(65, 2, 90);
+  color: #ffffff !important;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 0.8;
+  padding: 18px 30px;
+  text-transform: capitalize;
+  border-radius: 1px;
+  letter-spacing: 0.5px;
+  border:0px !important;
+  cursor:pointer;
+  border-radius:100px;
+
+}
+.contactBtn:hover {
+  background: rgb(131, 84, 150);
+  color: #ffffff;
+  box-shadow: 0 10px 25px -2px rgb(65, 2, 90);
+}
+/* end contact button */
 
 
 
@@ -701,6 +745,9 @@ section {
   position: relative;
 }
 /* end accordion toggle */
+
+
+
 
 
 
