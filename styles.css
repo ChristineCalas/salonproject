@@ -166,7 +166,7 @@ section {
 
 .parallaxTools {
   background-image: url("images/tools.jpg");
-  height: 650px;
+  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -176,7 +176,7 @@ section {
 
 .parallaxBlowdry {
   background-image: url("images/blowdry.jpg");
-  height: 650px;
+  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,7 +186,7 @@ section {
 
 .parallaxShears {
   background-image: url("images/shears.jpg");
-  height: 650px;
+  height: 500px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -205,7 +205,7 @@ section {
 
 
 /* Top & Bottom Borders Out */
-.topBotomBordersOut a:before, .topBotomBordersOut a:after {
+.topBottomBordersOut a:before, .topBottomBordersOut a:after {
     position: absolute;
     left: 0px;
     width: 100%;
@@ -216,15 +216,15 @@ section {
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
 }
-.topBotomBordersOut a:before {
+.topBottomBordersOut a:before {
     top: 0px;
     transform: translateY(10px);
 }
-.topBotomBordersOut a:after {
+.topBottomBordersOut a:after {
     bottom: 0px;
     transform: translateY(-10px);
 }
-.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after {
+.topBottomBordersOut a:hover:before, .topBottomBordersOut a:hover:after {
     opacity: 1;
     transform: translateY(0px);
 }
@@ -651,6 +651,29 @@ section {
   box-shadow: 0 10px 25px -2px rgb(65, 2, 90);
 }
 /* end newsletter */
+
+
+
+
+
+/* image zoom effect */
+.item{
+  left: 0;
+  top: 0;
+  position: relative;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.item img{
+  -webkit-transition: 0.6s ease;
+    transition: 0.6s ease;
+    
+}
+.item img:hover{
+  -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+/* end image zoom effect */
 
 
 
