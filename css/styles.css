@@ -155,7 +155,7 @@ section {
 
 /* parallax */
 .parallaxSign {
-  background-image: url("images/lavendersalonsign.png");
+  background-image: url("../images/lavendersalonsign.png");
   height: 650px;
   background-attachment: fixed;
   background-position: center;
@@ -165,7 +165,7 @@ section {
 }
 
 .parallaxTools {
-  background-image: url("images/tools.jpg");
+  background-image: url("../images/tools.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -175,7 +175,7 @@ section {
 }
 
 .parallaxBlowdry {
-  background-image: url("images/blowdry.jpg");
+  background-image: url("../images/blowdry.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
@@ -185,7 +185,7 @@ section {
 }
 
 .parallaxShears {
-  background-image: url("images/shears.jpg");
+  background-image: url("../images/shears.jpg");
   height: 500px;
   background-attachment: fixed;
   background-position: center;
